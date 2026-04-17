@@ -1,0 +1,30 @@
+# CCTPickBlockFix
+# Experimental proxy-side mitigation for Pick Block / Pick Item compatibility issues.
+
+enabled: true
+
+# Global debug logging switch. Can also be toggled at runtime with /cctpick debug on|off.
+debug: false
+
+# By default this plugin only attempts fixes for creative players.
+creative_only: true
+
+# If creative_only is false, allow limited experimental survival handling.
+experimental_survival: false
+
+# Enable fixes only when the current backend looks like the 1.21 / 1.21.1 protocol family.
+# In practice this targets protocol 767, which covers 1.21.0 and 1.21.1.
+only_when_backend_protocol_is_1_21_1: true
+
+# Include packet enum names in debug output.
+log_packet_names: true
+
+# Include packet ids in debug output.
+log_packet_ids: false
+
+# If a modern pick packet is recognized but cannot be translated safely, cancel it instead
+# of letting it continue toward the backend.
+cancel_unknown_pick_packets: false
+
+# If direct legacy rewrite fails, try proxy-side fallback emulation.
+emulate_when_direct_rewrite_fails: true

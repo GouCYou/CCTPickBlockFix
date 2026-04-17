@@ -1,0 +1,11 @@
+{
+  "id": "cctpickblockfix",
+  "name": "CCTPickBlockFix",
+  "version": "${version}",
+  "main": "cn.cctstudio.velocity.pickblockfix.CCTPickBlockFixPlugin",
+  "authors": [
+    "CCTStudio"
+  ],
+  "description": "Experimental Velocity-side Pick Block compatibility fix for modern clients on 1.21.1 backends.",
+  "url": "https://github.com/cctstudio/CCTPickBlockFix"
+}
